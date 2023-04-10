@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script defer src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#ddd]">
+    <div class="w-screen h-screen flex justify-center items-center">
+        <div class="bg-pink-400 rounded-2xl p-4 drop-shadow-2xl border-2 border-gray-600 font-mono min-w-[260px]">
+            <div id="display" class="w-full bg-gray-300 p-3 rounded-t-2xl text-right border-2 border-gray-600">
+                <h1 class="text-4xl">0</h1>
+                <span>0</span>
+            </div>
+            <div id="buttonsContainer" class="my-4 font-bold grid grid-cols-4 gap-2">
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">ON</button>
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">OFF</button>
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">C</button>
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">←</button>
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">+</button>
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">-</button>
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">x</button>
+                <button class="bg-blue-200 rounded-2xl p-2 border-2 border-gray-600 operation">/</button>
+            </div>
+            <div id="numbersContainer" class="grid grid-cols-4 gap-2 font-bold">
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">6</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">7</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">8</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">9</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">2</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">3</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">4</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">5</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">1</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">0</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 number">.</button>
+                <button class="p-2 bg-blue-200 rounded-2xl border-2 border-gray-600 operation"> = </button>
+            </div>
+        </div>
+    </divcla>    
+</body>
+</html>
