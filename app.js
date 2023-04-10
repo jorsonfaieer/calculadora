@@ -9,7 +9,6 @@ let valoractual = 0;
 
 operationBtn.forEach(btn => {
     btn.addEventListener('click', () => {
-
         switch(btn.textContent){
             case '←':
                 if(span.textContent.length === 1){
@@ -18,31 +17,64 @@ operationBtn.forEach(btn => {
                     span.textContent = span.textContent.slice(0, -1);   
                 }
                 break;
+
             case 'C':
                 span.textContent = '0';
                 result.textContent = '0';
                 operation = undefined;
+                valoractual = 0;
                 break;
+
             case 'ON':
                 span.textContent = '0';
                 result.textContent = '0';
                 span.style.opacity = '1';
                 result.style.opacity = '1';
                 operation = undefined;
+                valoractual = 0;
                 break;
+
             case 'OFF':
                 span.style.opacity = '0';
                 result.style.opacity = '0';
                 break;
+
             case ' = ':
-                valoractual = eval(`${result.textContent} ${operation} ${span.textContent}`);
+                valoractual = eval(span.textContent);
                 result.textContent = valoractual;
                 span.textContent = '0';
-                break;                
+                break;  
+
             case '+':
-                result.textContent = span.textContent;
-                span.textContent = '0';
-                operation = '+';
+                if(result.textContent === '0'){
+                    span.textContent += ' + ';
+                }else{                    
+                    span.textContent = `${result.textContent} + `;
+                }
+                break;
+
+            case '-':
+                if(result.textContent === '0'){
+                    span.textContent += ' - ';
+                }else{                    
+                    span.textContent = `${result.textContent} - `;
+                }
+                break;
+
+            case 'x':
+                if(result.textContent === '0'){
+                    span.textContent += ' * ';
+                }else{                    
+                    span.textContent = `${result.textContent} * `;
+                }
+                break;
+
+            case '/':
+                if(result.textContent === '0'){
+                    span.textContent += ' / ';
+                }else{                    
+                    span.textContent = `${result.textContent} / `;
+                }
                 break;
         }
     })
