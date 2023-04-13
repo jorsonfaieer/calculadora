@@ -1,1 +1,2 @@
-# Calculadora simple hecha con HTML, Tailwind y JavaScript.
+# Calculadora -> 
+Calculadora simple hecha con HTML, Tailwind y JavaScript.
